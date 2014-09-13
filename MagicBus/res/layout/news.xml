@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blue"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:text="ON GOING EVENTS:"
+            android:textColor="#00FF00"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/selector_card_background"
+            android:drawableTop="@drawable/scmumbai"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Standard Chartered Mumbai Marathon" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:text="UPCOMING EVENTS:"
+            android:textColor="#00FF00"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/card5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/selector_card_background"
+            android:drawableTop="@drawable/spiritmarathon"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Bangalore Run" />
+
+        <TextView
+            android:id="@+id/card6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/selector_card_background"
+            android:drawableTop="@drawable/mara"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Delhi Run" />
+    </LinearLayout>
+
+</ScrollView>

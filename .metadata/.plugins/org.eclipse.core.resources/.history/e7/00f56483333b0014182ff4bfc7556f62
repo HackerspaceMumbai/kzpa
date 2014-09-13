@@ -1,0 +1,29 @@
+?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/changelog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:text="Now upload to Facebook straight from the ISTE VESIT Mobile App. To post an image, just hit the camera icon! To post an image with a message, type the message in the text field and then click on Share \nDepending on your Android version, your first post may be used to verify facebook publish permissions. Just hit okay, and you're good to go!\nHappy Posting!\nOn Android 4.4, navigate to Gallery before selecting the image"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
