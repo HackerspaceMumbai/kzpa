@@ -33,6 +33,11 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
+import com.facebook.Request;
+import com.facebook.Response;
+import com.facebook.Session;
+import com.facebook.SessionState;
+import com.facebook.model.GraphUser;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
@@ -68,9 +73,11 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+
 				Intent intent = new Intent(MainActivity.this,
 						ShareActivity.class);
 				startActivity(intent);
+
 			}
 		});
 	}
