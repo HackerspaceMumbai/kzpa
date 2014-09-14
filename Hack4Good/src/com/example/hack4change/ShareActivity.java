@@ -2,6 +2,7 @@ package com.example.hack4change;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.facebook.Session;
@@ -28,7 +29,7 @@ public class ShareActivity extends SherlockFragmentActivity {
 
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data) {
-		// Log.e("Activity Result", "result called");
+		Log.e("Activity Result", "result called");
 		super.onActivityResult(requestCode, resultCode, data);
 		Session.getActiveSession().onActivityResult(this, requestCode,
 				resultCode, data);

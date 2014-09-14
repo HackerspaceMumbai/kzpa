@@ -347,6 +347,10 @@ public class FacebookFragment extends SherlockFragment {
 
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		Session.getActiveSession().onActivityResult(getActivity(), requestCode,
+				resultCode, data);
+
 		if (requestCode == 1888) {
 			String _path = Environment.getExternalStorageDirectory()
 					+ File.separator + "Hack4Good.jpg";
@@ -560,10 +564,10 @@ public class FacebookFragment extends SherlockFragment {
 						}
 						FacebookRequestError error = response.getError();
 						if (error != null) {
-							// Toast.makeText(
-							// getActivity().getApplicationContext(),
-							// error.getErrorMessage(), Toast.LENGTH_SHORT)
-							// .show();
+							Toast.makeText(
+									getActivity().getApplicationContext(),
+									error.getErrorMessage(), Toast.LENGTH_SHORT)
+									.show();
 						} else {
 							Toast.makeText(
 									getActivity().getApplicationContext(),
@@ -715,7 +719,7 @@ public class FacebookFragment extends SherlockFragment {
 			if (sharing != null) {
 				final_message = sharing;
 			}
-			if (hint.getText().toString() == null) {
+			if (hint.getText().toString().equals("")) {
 				Toast.makeText(getActivity().getApplicationContext(),
 						"Enter a message first!", Toast.LENGTH_LONG).show();
 			} else {

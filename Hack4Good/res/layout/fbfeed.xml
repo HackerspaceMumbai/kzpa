@@ -58,7 +58,7 @@
             android:layout_marginLeft="10dp"
             android:fontFamily="sans-serif-condensed"
             android:padding="25dp"
-            android:text="What's on your mind? \nLet us know! Share an event or post a photo"
+            android:text="What's on your mind? \nLet us know! Post a message or a photo!"
             android:textColor="#006699"
             android:textSize="18sp" />
 
@@ -74,7 +74,7 @@
                 android:layout_margin="10dp"
                 android:layout_weight=".8"
                 android:fontFamily="sans-serif-condensed"
-                android:hint="Post on the Hack4Good Mumbai Page"
+                android:hint="Post on the Hack4Good  Group"
                 android:inputType="textCapSentences|textAutoCorrect|textAutoComplete"
                 android:minHeight="40dp"
                 android:textSize="18sp" />

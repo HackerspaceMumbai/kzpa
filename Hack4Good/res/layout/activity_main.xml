@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="Welcome to Hack4Good"
+        android:text="Welcome to Hack4Good. Create events, share it with your friends and raise awareness :)"
         android:textAppearance="@android:style/TextAppearance.Holo.Large"
         android:textColor="#CC0000" />
 
@@ -23,7 +23,25 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="54dp"
-        android:text="Next" />
+        android:layout_marginTop="30dp"
+        android:text="Share on Facebook" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Make a donation" />
+    
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Arrange a Cyclothon" />
+    
 </RelativeLayout>
