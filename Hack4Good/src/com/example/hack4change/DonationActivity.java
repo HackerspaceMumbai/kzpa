@@ -11,5 +11,4 @@ public class DonationActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.donation);
 	}
-	
 }

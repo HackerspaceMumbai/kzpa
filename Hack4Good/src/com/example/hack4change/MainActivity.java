@@ -104,6 +104,35 @@ public class MainActivity extends SherlockFragmentActivity {
 			}
 		});
 
+		Button b1 = (Button) findViewById(R.id.btnCreate);
+		Button b2 = (Button) findViewById(R.id.btnProfile);
+
+		b1.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+
+				Intent iCreate = new Intent(MainActivity.this,
+						CreateEventActivity.class);
+				Log.e("working", "working");
+				startActivity(iCreate);
+			}
+
+		});
+		b2.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+
+				// test http - profile
+				Intent iProfile = new Intent(MainActivity.this,
+						UserActivity.class);
+				startActivity(iProfile);
+			}
+
+		});
 	}
 
 	private void checkPlayServices() {
