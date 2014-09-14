@@ -10,12 +10,13 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="436dp" >
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:gravity="center_horizontal"
             android:text="Welcome to Hack4Good. Create events, share it with your friends and raise awareness :)"
             android:textAppearance="@android:style/TextAppearance.Holo.Large"
@@ -27,7 +28,6 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView1"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
             android:text="Share on Facebook" />
 
         <Button
@@ -36,7 +36,6 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/button1"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
             android:text="Make a donation" />
 
         <Button
@@ -45,26 +44,35 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/button2"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
             android:text="Arrange a Cyclothon" />
-
-        <Button
-            android:id="@+id/btnCreate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/button3"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:text="Create Event" />
 
         <Button
             android:id="@+id/btnProfile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Show Profile" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/btnCreate"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:text="Show Profile" />
+            android:layout_marginTop="14dp"
+            android:text="Event History" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnProfile"
+            android:layout_below="@+id/button3"
+            android:layout_marginTop="16dp"
+            android:text="Create Event" 
+            android:layout_centerHorizontal="true"/>
+
     </RelativeLayout>
 
 </ScrollView>

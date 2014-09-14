@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="93dp"
         android:layout_marginTop="24dp"
-        android:text="EventName"
+        android:text="Cyclothon"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <RatingBar
@@ -33,15 +33,41 @@
         android:layout_below="@+id/ratingBar1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:text="Description" />
+        android:text="Cyclothon for Climate Change Awareness among the youth of Mumbai " />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:text="317 Attending" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="9:00am 15th September 2014" />
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/imageView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="31dp"
-        android:text="Attending?" />
+        android:layout_marginTop="22dp"
+        android:text="Join?" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/dummy" />
 
 </RelativeLayout>

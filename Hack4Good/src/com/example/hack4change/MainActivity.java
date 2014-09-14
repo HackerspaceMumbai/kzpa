@@ -77,7 +77,19 @@ public class MainActivity extends SherlockFragmentActivity {
 
 			}
 		});
+		Button past_events = (Button) findViewById(R.id.button4);
+		past_events.setOnClickListener(new View.OnClickListener() {
 
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+
+				Intent intent = new Intent(MainActivity.this,
+						EventDetailsActivity.class);
+				startActivity(intent);
+
+			}
+		});
 		donation.setOnClickListener(new View.OnClickListener() {
 
 			@Override

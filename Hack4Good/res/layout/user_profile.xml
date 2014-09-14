@@ -3,25 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:src="@android:drawable/ic_menu_myplaces" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/imageView1"
-        android:layout_marginTop="60dp"
-        android:text="UserName"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -64,8 +45,7 @@
         android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView1"
-        android:layout_alignBottom="@+id/textView1"
+        android:layout_above="@+id/editText2"
         android:layout_toRightOf="@+id/textView4"
         android:ems="10" />
 
@@ -80,5 +60,14 @@
 
         <requestFocus />
     </EditText>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/dummy2" />
 
 </RelativeLayout>
