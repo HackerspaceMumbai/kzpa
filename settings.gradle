@@ -1,0 +1,4 @@
+include ':hack4change'
+include ':google-play-services_lib'
+include ':FacebookSDK'
+include ':actionbarsherlock'
