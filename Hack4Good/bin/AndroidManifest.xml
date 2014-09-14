@@ -52,6 +52,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.example.hack4change.DonationActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.example.hack4change.LoginActivity"
             android:label="Login"
             android:windowSoftInputMode="adjustResize|stateVisible" >
@@ -64,6 +73,15 @@
         <activity
             android:name="com.example.hack4change.ShareActivity"
             android:label="Share" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.hack4change.CycleActivity"
+            android:label="Cyclathon" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

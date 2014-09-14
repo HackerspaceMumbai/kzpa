@@ -61,18 +61,49 @@ public class MainActivity extends SherlockFragmentActivity {
 
 		checkPlayServices();
 
-		Button next = (Button) findViewById(R.id.button1);
-		next.setOnClickListener(new View.OnClickListener() {
+		Button share = (Button) findViewById(R.id.button1);
+		Button donation = (Button) findViewById(R.id.button2);
+		Button cycle = (Button) findViewById(R.id.button3);
+
+		share.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-								
-				  Intent intent = new Intent(MainActivity.this,
-				  ShareActivity.class); startActivity(intent);
-				 
+
+				Intent intent = new Intent(MainActivity.this,
+						ShareActivity.class);
+				startActivity(intent);
+
 			}
 		});
+
+		donation.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+
+				Intent intent = new Intent(MainActivity.this,
+						DonationActivity.class);
+				startActivity(intent);
+
+			}
+		});
+
+		cycle.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+
+				Intent intent = new Intent(MainActivity.this,
+						CycleActivity.class);
+				startActivity(intent);
+
+			}
+		});
+
 	}
 
 	private void checkPlayServices() {

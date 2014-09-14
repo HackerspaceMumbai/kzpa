@@ -8,6 +8,9 @@
 package com.example.hack4change;
 
 public final class R {
+    public static final class array {
+        public static final int runs=0x7f0b0000;
+    }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -1526,9 +1529,10 @@ containing a value of this type.
         public static final int abs__textButton=0x7f060027;
         public static final int abs__title=0x7f06002f;
         public static final int abs__up=0x7f06001f;
-        public static final int action_forgot_password=0x7f06006e;
-        public static final int action_settings=0x7f06006f;
-        public static final int authButton=0x7f060068;
+        public static final int action_forgot_password=0x7f060076;
+        public static final int action_settings=0x7f060077;
+        public static final int authButton=0x7f060070;
+        public static final int bdonate=0x7f06006d;
         public static final int book_now=0x7f060010;
         public static final int button1=0x7f06004e;
         public static final int button2=0x7f06004f;
@@ -1536,8 +1540,8 @@ containing a value of this type.
         public static final int buyButton=0x7f06000a;
         public static final int buy_now=0x7f06000f;
         public static final int buy_with_google=0x7f06000e;
-        public static final int cameraButton=0x7f06006b;
-        public static final int cameraPhoto=0x7f06006d;
+        public static final int cameraButton=0x7f060073;
+        public static final int cameraPhoto=0x7f060075;
         public static final int classic=0x7f060011;
         public static final int com_facebook_login_activity_progress_bar=0x7f060053;
         public static final int com_facebook_picker_activity_circle=0x7f060052;
@@ -1560,11 +1564,14 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_logo_image=0x7f060063;
         public static final int com_facebook_usersettingsfragment_profile_name=0x7f060064;
         public static final int disableHome=0x7f06001d;
-        public static final int editTextMessage=0x7f06006a;
+        public static final int editTextMessage=0x7f060072;
         public static final int edit_query=0x7f06003a;
         public static final int email=0x7f060049;
-        public static final int fbmessage=0x7f060069;
-        public static final int fbwelcome=0x7f060067;
+        public static final int etamount=0x7f06006c;
+        public static final int etmail=0x7f06006a;
+        public static final int etname=0x7f060068;
+        public static final int fbmessage=0x7f060071;
+        public static final int fbwelcome=0x7f06006f;
         public static final int grayscale=0x7f060012;
         public static final int holo_dark=0x7f060005;
         public static final int holo_light=0x7f060006;
@@ -1576,6 +1583,7 @@ containing a value of this type.
         public static final int login_form=0x7f060048;
         public static final int login_status=0x7f060046;
         public static final int login_status_message=0x7f060047;
+        public static final int map=0x7f060066;
         public static final int match_parent=0x7f06000c;
         public static final int monochrome=0x7f060013;
         public static final int none=0x7f060000;
@@ -1583,11 +1591,11 @@ containing a value of this type.
         public static final int password=0x7f06004a;
         public static final int picker_subtitle=0x7f060060;
         public static final int production=0x7f060007;
-        public static final int profilePicture=0x7f060066;
+        public static final int profilePicture=0x7f06006e;
         public static final int sandbox=0x7f060008;
         public static final int satellite=0x7f060002;
         public static final int selectionDetails=0x7f06000b;
-        public static final int shareButton=0x7f06006c;
+        public static final int shareButton=0x7f060074;
         public static final int showCustom=0x7f06001c;
         public static final int showHome=0x7f060019;
         public static final int showTitle=0x7f06001b;
@@ -1597,6 +1605,9 @@ containing a value of this type.
         public static final int tabMode=0x7f060017;
         public static final int terrain=0x7f060003;
         public static final int textView1=0x7f06004d;
+        public static final int tvamount=0x7f06006b;
+        public static final int tvemail=0x7f060069;
+        public static final int tvname=0x7f060067;
         public static final int useLogo=0x7f060018;
         public static final int wrap_content=0x7f06000d;
     }
@@ -1642,18 +1653,20 @@ containing a value of this type.
         public static final int com_facebook_placepickerfragment_list_row=0x7f030022;
         public static final int com_facebook_search_bar_layout=0x7f030023;
         public static final int com_facebook_usersettingsfragment=0x7f030024;
-        public static final int donation=0x7f030025;
-        public static final int error=0x7f030026;
-        public static final int fbfeed=0x7f030027;
-        public static final int sherlock_spinner_dropdown_item=0x7f030028;
-        public static final int sherlock_spinner_item=0x7f030029;
+        public static final int cycle=0x7f030025;
+        public static final int donation=0x7f030026;
+        public static final int error=0x7f030027;
+        public static final int fbfeed=0x7f030028;
+        public static final int sherlock_spinner_dropdown_item=0x7f030029;
+        public static final int sherlock_spinner_item=0x7f03002a;
     }
     public static final class menu {
-        public static final int login=0x7f0b0000;
-        public static final int main=0x7f0b0001;
+        public static final int login=0x7f0c0000;
+        public static final int main=0x7f0c0001;
     }
     public static final class string {
         public static final int APP_ID=0x7f04004e;
+        public static final int IO_Exception_getFromLocation=0x7f040061;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abs__action_bar_home_description=0x7f040039;
@@ -1693,10 +1706,14 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abs__shareactionprovider_share_with_application=0x7f040040;
-        public static final int action_forgot_password=0x7f040058;
+        public static final int action_forgot_password=0x7f04008b;
+        /**  Menu title 
+         */
         public static final int action_settings=0x7f040052;
-        public static final int action_sign_in_register=0x7f040056;
-        public static final int action_sign_in_short=0x7f040057;
+        public static final int action_sign_in_register=0x7f040089;
+        public static final int action_sign_in_short=0x7f04008a;
+        public static final int address=0x7f040057;
+        public static final int address_output_string=0x7f040053;
         public static final int app_name=0x7f040046;
         public static final int auth_client_needs_enabling_title=0x7f040001;
         public static final int auth_client_needs_installation_title=0x7f040002;
@@ -1704,6 +1721,8 @@ containing a value of this type.
         public static final int auth_client_play_services_err_notification_msg=0x7f040004;
         public static final int auth_client_requested_by_msg=0x7f040005;
         public static final int auth_client_using_bad_version_title=0x7f040000;
+        public static final int btn_logout_from_google=0x7f040076;
+        public static final int btn_revoke_access=0x7f040077;
         public static final int com_facebook_choose_friends=0x7f04002f;
         public static final int com_facebook_dialogloginactivity_ok_button=0x7f040020;
         public static final int com_facebook_internet_permission_error_message=0x7f040033;
@@ -1818,25 +1837,77 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f04001e;
-        public static final int error_field_required=0x7f04005d;
-        public static final int error_incorrect_password=0x7f04005c;
-        public static final int error_invalid_email=0x7f04005a;
-        public static final int error_invalid_password=0x7f04005b;
+        /**  Messages 
+         */
+        public static final int connected=0x7f040058;
+        public static final int connection_error_code=0x7f040078;
+        public static final int connection_error_code_unknown=0x7f040059;
+        public static final int connection_error_disabled=0x7f040079;
+        public static final int connection_error_internal=0x7f04007a;
+        public static final int connection_error_invalid=0x7f04007b;
+        public static final int connection_error_invalid_account=0x7f04007c;
+        public static final int connection_error_license_check_failed=0x7f04007d;
+        public static final int connection_error_message=0x7f04007e;
+        public static final int connection_error_misconfigured=0x7f04007f;
+        public static final int connection_error_missing=0x7f040080;
+        public static final int connection_error_needs_resolution=0x7f040081;
+        public static final int connection_error_network=0x7f040082;
+        public static final int connection_error_outdated=0x7f040083;
+        public static final int connection_error_sign_in_required=0x7f040084;
+        public static final int connection_error_unknown=0x7f040085;
+        public static final int connection_failed=0x7f04005a;
+        public static final int disconnected=0x7f04005b;
+        public static final int error_field_required=0x7f040090;
+        public static final int error_incorrect_password=0x7f04008f;
+        public static final int error_invalid_email=0x7f04008d;
+        public static final int error_invalid_password=0x7f04008e;
+        public static final int get_address=0x7f04005c;
+        public static final int get_location=0x7f04005d;
         public static final int hello_user=0x7f04004d;
         public static final int hello_world=0x7f040047;
         public static final int hide=0x7f04004f;
-        public static final int login_progress_signing_in=0x7f040059;
+        public static final int illegal_argument_exception=0x7f04005e;
+        public static final int invalid_action=0x7f04005f;
+        public static final int invalid_integer_id=0x7f040060;
+        /**  Latitude, longitude format 
+         */
+        public static final int latitude_longitude=0x7f040054;
+        /**  Labels 
+         */
+        public static final int latlng=0x7f040056;
+        public static final int location_requested=0x7f040062;
+        public static final int location_update_error=0x7f040064;
+        public static final int location_update_error_detail=0x7f040065;
+        public static final int location_update_missing_update=0x7f040066;
+        public static final int location_updated=0x7f040063;
+        public static final int location_updates_stopped=0x7f040067;
+        public static final int log_new_location=0x7f040068;
+        public static final int login_progress_signing_in=0x7f04008c;
         public static final int more=0x7f040050;
+        public static final int no_address_found=0x7f040069;
+        public static final int no_connection=0x7f04006a;
+        public static final int no_geocoder_available=0x7f04006b;
+        public static final int no_location_available=0x7f04006c;
+        public static final int no_resolution=0x7f04006e;
+        public static final int periodic_update_stop=0x7f04006f;
         public static final int photo_post=0x7f04004a;
+        public static final int play_services_available=0x7f040070;
         /**  Strings related to login 
          */
-        public static final int prompt_email=0x7f040054;
-        public static final int prompt_password=0x7f040055;
+        public static final int prompt_email=0x7f040087;
+        public static final int prompt_password=0x7f040088;
         public static final int relative_layout_padding=0x7f040048;
+        public static final int request_location_updates_in_progress=0x7f040071;
+        public static final int resolved=0x7f04006d;
         public static final int select_picture=0x7f040051;
+        public static final int selectrun=0x7f040055;
+        public static final int start_updates=0x7f040072;
         public static final int status_update=0x7f04004b;
+        public static final int stop_updates=0x7f040073;
         public static final int successfully_posted_post=0x7f04004c;
-        public static final int title_activity_login=0x7f040053;
+        public static final int title_activity_login=0x7f040086;
+        public static final int unknown=0x7f040074;
+        public static final int unknown_activity_request_code=0x7f040075;
         public static final int view_padding=0x7f040049;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
