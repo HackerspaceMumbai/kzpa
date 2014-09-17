@@ -21,5 +21,4 @@ Steps to run the Push Messaging feature
 1. Put the entire folder in the desired location
 2. Point to this location URL in the MainActivity.java
 
-Live working of the GCM can be found at http://instamaps.site40.net/grayhack/index1.php
 
